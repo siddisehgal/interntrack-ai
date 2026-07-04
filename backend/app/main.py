@@ -4,10 +4,15 @@ from app.routers import auth, internships, assistant, resume, interview
 
 app = FastAPI(title="InternTrack AI", version="1.0.0")
 
-# Consolidated CORS configuration
+# Revised CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
+    allow_origins=[
+        "http://localhost:5173", 
+        "http://localhost:5174", 
+        "http://localhost:5175",
+        "https://interntrack-ai-1.0czp.onrender.com"  # Added your production URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
