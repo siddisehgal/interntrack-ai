@@ -11,7 +11,7 @@ app.add_middleware(
         "http://localhost:5173", 
         "http://localhost:5174", 
         "http://localhost:5175",
-        "https://interntrack-ai-1.0czp.onrender.com"  # Added your production URL
+        "https://interntrack-ai-1-0czp.onrender.com",  # Added your production URL
     ],
     allow_credentials=True,
     allow_methods=["*"],
